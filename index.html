@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Boost Service - Order Now</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">Social Boost</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Boost Your Social Media Presence</h2>
+        <p>Select the service you need below. When you click the button, you will chat with us on WhatsApp to confirm your order and payment.</p>
+
+        <div class="order-form">
+            <label for="service">Select Service & Price:</label>
+            <select id="service" name="service" required>
+                <option value="">-- Choose a Service --</option>
+                
+                <option value="100 Likes - #1,000">100 Likes - #1,000</option>
+                <option value="50 Likes - #500">50 Likes - #500</option>
+                <option value="20 Likes - #200">20 Likes - #200</option>
+                <option value="10 Likes - #100">10 Likes - #100</option>
+
+                <option value="100 Followers - #1,500">100 Followers - #1,500</option>
+                <option value="50 Followers - #750">50 Followers - #750</option>
+                <option value="20 Followers - #300">20 Followers - #300</option>
+                <option value="10 Followers - #150">10 Followers - #150</option>
+            </select>
+
+            <label for="platform">Social Platform:</label>
+            <input type="text" id="platform" name="platform" placeholder="e.g., Instagram, TikTok, etc." required>
+            
+            <label for="username">Your Social Media Username/Link:</label>
+            <input type="text" id="username" name="username" placeholder="@yourusername or full link" required>
+            
+            <label for="proof">Optional: Attach Proof of Payment (Manual Service)</label>
+            <input type="file" id="proof" name="proof">
+
+            <a href="https://wa.me/2347076483717?text=Hello! I have filled out the order details above (service, platform, and username) and am ready to send proof of payment." 
+               class="cta-button" target="_blank">
+                I'm Ready: Chat on WhatsApp
+            </a>
+        </div>
+        
+        <div class="payment-details">
+            <h3>Payment Instructions:</h3>
+            <p>
+                **Before clicking the button above**, please transfer the required amount for your chosen service to the account below. You will send proof of payment on WhatsApp.
+            </p>
+            <div class="account-box">
+                <h4>Bank Name: GT BANK</h4>
+                <p>Account Number: **8024332519**</p>
+                <p>Account Name: **TITILAYO FELICIA**</p>
+                <p>Contact WhatsApp: <a href="https://wa.me/2347076483717" target="_blank">07076483717</a></p>
+            </div>
+            <p style="font-size: 0.9em; color: #ffdd57;">**Note: Orders are processed only after payment confirmation via WhatsApp.**</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Social Boost Service. All rights reserved.</p>
+        <p>Warning: This is a manual payment service. Read Terms before ordering.</p>
+    </footer>
+
+</body>
+</html>
