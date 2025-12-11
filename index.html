@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Boost Service - Order Now</title>
-    <link rel="stylesheet" href="styles.css"> 
+    
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="stylesheet" href="./styles.css"> 
 </head>
 <body>
     
@@ -60,9 +63,9 @@
                 **Before clicking the button above**, please transfer the required amount for your chosen service to the account below. You will send proof of payment on WhatsApp.
             </p>
             <div class="account-box">
-                <h4>Bank Name: GT BANK</h4>
-                <p>Account Number: **8024332519**</p>
-                <p>Account Name: **TITILAYO FELICIA**</p>
+                <h4>Bank Name: Kuda Microfinance Bank</h4>
+                <p>Account Number: **1234567890**</p>
+                <p>Account Name: **Your Full Name**</p>
                 <p>Contact WhatsApp: <a href="https://wa.me/2347076483717" target="_blank">07076483717</a></p>
             </div>
             <p style="font-size: 0.9em; color: #ffdd57;">**Note: Orders are processed only after payment confirmation via WhatsApp.**</p>
@@ -73,6 +76,19 @@
         <p>&copy; 2025 Social Boost Service. All rights reserved.</p>
         <p>Warning: This is a manual payment service. Read Terms before ordering.</p>
     </footer>
-
+    
+    <script src="./script.js"></script>
+    
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js').then(function(registration) {
+              console.log('ServiceWorker registration successful');
+            }, function(err) {
+              console.log('ServiceWorker registration failed', err);
+            });
+          });
+        }
+    </script>
 </body>
 </html>
